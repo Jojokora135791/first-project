@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+.header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+}
+.header_logo {
+    width: 228px;
+    height: 32px;
+    position: absolute;
+}
+.header_logo_place_header {
+  left: 64px;
+  top: 30px;
+  background-image: url(../images/logo_place_header.svg);
+}
+.title {
+  margin: 0;
+  background-color: rgb(60, 145, 145);
+  width: 730px;
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+}
+.subtitle {
+  background-color: #2f80ed;
+  position: absolute;
+  left: 0px;
+  width: 388px;
+  bottom: 30px;
+}
+.subtitle__text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+.main-illustration {
+  width: 765px;
+  height: 608px;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.square-pic {
+  order: 1;
+  position: absolute;
+  width: 506px;
+  height: 506px;
+  right: 0;
+  top: 64px;
+  background-color: #2f80ed;
+}
