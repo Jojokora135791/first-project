@@ -3,66 +3,60 @@ body {
 }
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 
 }
 
 .header {
+  border: 1px solid grey;
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
+  /*Установим ограничение по высоте секции*/
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
 }
-.header_logo {
+.header__logo {
+    left: 64px;
+    top: 30px;
     width: 228px;
     height: 32px;
     position: absolute;
 }
-.header_logo_place_header {
-  left: 64px;
-  top: 30px;
+.header__logo_place_header {
   background-image: url(../images/logo_place_header.svg);
 }
-.title {
-  margin: 0;
-  background-color: rgb(60, 145, 145);
+.header__title {
   width: 730px;
   font-size: 102px;
   font-weight: 600;
   line-height: 96px;
 }
-.subtitle {
-  background-color: #2f80ed;
+.header__subtitle {
   position: absolute;
-  left: 0px;
+  left: 64px;
   width: 388px;
   bottom: 30px;
 }
-.subtitle__text {
+.header__subtitle-text {
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
 }
-.main-illustration {
+
+.header__main-illustration {
+  position: absolute;
   width: 765px;
   height: 608px;
   background-size: cover;
-  position: absolute;
   right: 0;
   bottom: 0;
 }
-.square-pic {
+.header__square-pic {
   order: 1;
   position: absolute;
   width: 506px;
@@ -71,3 +65,52 @@ body {
   top: 64px;
   background-color: #2f80ed;
 }
+
+.description {
+  margin-top: 100px;
+}
+.two-columns {
+  border: 1px solid grey;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+.two-columns__breaf {
+  width: 175px;
+}
+.two-columns__breaf-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2f80ed;
+}
+.two-columns__main-text {
+  min-width: 784px;
+  width: 80%;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}
+.two-column__span-accent {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}
+.digits {
+  margin-top: 100px;
+  border: 1px solid grey;
+ 
+
+}
+
