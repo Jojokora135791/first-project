@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -8,9 +9,17 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 
 }
+.block__background_color_gray {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(194, 194, 194,0.7);
+  z-index: -99;
+}
 
 .header {
   border: 1px solid grey;
+  background-color: rgba(194, 194, 194,0.7);
   display: flex;
   position: relative;
   flex-direction: column;
@@ -20,6 +29,7 @@ body {
   min-height: 600px;
   max-height: 756px;
 }
+
 .header__logo {
     left: 64px;
     top: 30px;
@@ -27,22 +37,23 @@ body {
     height: 32px;
     position: absolute;
 }
+
 .header__logo_place_header {
   background-image: url(../images/logo_place_header.svg);
 }
+
 .header__title {
   width: 730px;
   font-size: 102px;
   font-weight: 600;
   line-height: 96px;
 }
+
 .header__subtitle {
   position: absolute;
   left: 64px;
   width: 388px;
   bottom: 30px;
-}
-.header__subtitle-text {
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
@@ -79,8 +90,6 @@ body {
 }
 .two-columns__breaf {
   width: 175px;
-}
-.two-columns__breaf-text {
   margin: 0;
   font-size: 18px;
   font-weight: normal;
@@ -108,9 +117,163 @@ body {
   line-height: 34px;
 }
 .digits {
+  display: block;
   margin-top: 100px;
   border: 1px solid grey;
- 
-
+}
+.section-title_theme_light {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.section-title_theme_dark {
+  color: #fff;
+  background-color: rgb(24, 22, 22);
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.section-subtitle_theme_light {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+.section-subtitle_theme_dark {
+  color: #fff;
+  background-color: rgb(24, 22, 22);
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+.table_theme_light {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: auto;
+}
+.table_theme_dark {
+  color: #fff;
+  background-color: rgb(24, 22, 22);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: auto;
+}
+.table__cell_theme_light {
+  width: 250px;
+  margin-top: 60px;
+}
+.table__cell_theme_dark {
+  color: #fff;
+  background-color: rgb(24, 22, 22);
+  width: 200px;
+  margin-top: 60px;
+}
+.table__heading_theme_light {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.table__heading_theme_dark {
+  color: #fff;
+  background-color: rgb(24, 22, 22);
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.table__text_theme_light {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.table__text_theme_dark {
+  color: #fff;
+  background-color: rgb(24, 22, 22);
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.table__text:last-child {
+  margin: 0;
+}
+.feynman {
+  margin-top: 100px;
+  padding-top: 100px;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  border: 1px solid grey;
+}
+.feynman__title {
+  width: 648px;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 auto 70px;
+  text-align: center;
 }
 
+.feynman__subtitle {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  margin: auto;
+  text-align: center;
+}
+.feynman__link {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+.feynman__main-illustration {
+  position: absolute;
+  width: 867px;
+  height: 637px;
+  background-size: cover;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.kaufman {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  border: 1px solid grey;
+  background-color: rgb(24, 22, 22);
+  z-index: -99;
+}
+.kaufman__triangle {
+  overflow: hidden;
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  background-size: cover;
+  right: -210px;
+  top: 0;
+  background-image: url(../images/kaufman-triangle.svg);
+  z-index: -1;
+}
